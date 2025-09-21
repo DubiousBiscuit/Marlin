@@ -83,7 +83,7 @@
  *
  * :[-1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-#define SERIAL_PORT -1
+#define SERIAL_PORT 2
 
 /**
  * Serial Port Baud Rate
@@ -96,7 +96,7 @@
  *
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
-#define BAUDRATE 500000
+#define BAUDRATE 250000 
 
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -105,8 +105,8 @@
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
  * :[-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-#define SERIAL_PORT_2 2 // TFT on UART2 (PB10/TX, PB11/RX)
-//#define BAUDRATE_2 250000   // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
+#define SERIAL_PORT_2 1 // TFT on UART2 (PB10/TX, PB11/RX)
+/#define BAUDRATE_2 250000 // :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000] Enable to override BAUDRATE
 
 /**
  * Select a third serial port on the board to use for communication with the host.
@@ -3196,7 +3196,7 @@
 //
 // Connect to EXP1 on RAMPS and compatible boards.
 //
-//#define CR10_STOCKDISPLAY
+#define CR10_STOCKDISPLAY
 
 //
 // Ender-2 OEM display, a variant of the MKS_MINI_12864
@@ -3414,12 +3414,12 @@
  * or enable TFT_GENERIC and set sub-options.
  */
 
- // BTT TFT35 V3.0 Touch UI
-#define TOUCH_UI_FTDI_EVE
-#define TFT_COLOR_UI
-#define TFT_CLASSIC_UI  // Fallback if touch fails
-#define SHOW_BOOTSCREEN  // Optional: BTT boot logo
-#define TOUCH_SCREEN_CALIBRATION
+ // BTT TFT35 V3.0 Touch UI grok 
+//#define TOUCH_UI_FTDI_EVE
+//#define TFT_COLOR_UI
+//#define TFT_CLASSIC_UI  // Fallback if touch fails
+//#define SHOW_BOOTSCREEN  // Optional: BTT boot logo
+//#define TOUCH_SCREEN_CALIBRATION
 
 //
 // 480x320, 3.5", SPI Display with Rotary Encoder from MKS

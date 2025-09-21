@@ -1386,7 +1386,7 @@
 /*suggested by grok*/
 #define RETRACT_LENGTH 4.0
 #define RETRACT_FEEDRATE 35
-#define RETRACT_ZLIFT 0.0
+#define RETRACT_ZRAISE 0.0
 #define RETRACT_RECOVER_LENGTH 0.0
 #define RETRACT_RECOVER_FEEDRATE 35
 
@@ -2753,7 +2753,6 @@
  * you must uncomment the following option or it won't work.
  */
 #define SDSUPPORT
-#define SDCARD_CONNECTION ONBOARD //added by GROK 
 
 /**
  * SD CARD: ENABLE CRC
@@ -3353,7 +3352,7 @@
 //
 #define MALYAN_LCD
 #if ENABLED(MALYAN_LCD)
-  #define LCD_SERIAL_PORT 1
+  //#define LCD_SERIAL_PORT 1
 #endif
 
 //

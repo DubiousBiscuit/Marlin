@@ -1213,9 +1213,9 @@
 #define USE_XMIN_PLUG
 #define USE_YMIN_PLUG
 #define USE_ZMIN_PLUG
-#define X_MIN_ENDSTOP_INVERTING false  // Adjust if needed
-#define Y_MIN_ENDSTOP_INVERTING false
-#define Z_MIN_ENDSTOP_INVERTING false
+#define X_MIN_ENDSTOP_HIT_STATE HIGH  // Adjust if needed
+#define Y_MIN_ENDSTOP_HIT_STATE HIGH
+#define Z_MIN_ENDSTOP_HIT_STATE HIGH
 #define Z_MIN_POS 0
 #define DELTA_HOME_TO_MAX false
 
@@ -3350,7 +3350,7 @@
 //
 // LCD for Malyan M200/M300 printers
 //
-#define MALYAN_LCD
+//#define MALYAN_LCD
 #if ENABLED(MALYAN_LCD)
   //#define LCD_SERIAL_PORT 1
 #endif
